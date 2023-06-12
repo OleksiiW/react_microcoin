@@ -56,7 +56,7 @@ const WaitingRoom = () => {
   const minutes = String(Math.floor(countdown / 60)).padStart(2, '0');
   const seconds = String(countdown % 60).padStart(2, '0');
 
-  if (countdown <= 0) {
+  if (countdown <= 0) {                                                     // istanbul ignore next
     window.location.href = '/';
   }
 

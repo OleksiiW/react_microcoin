@@ -14,7 +14,6 @@ import Change from './components/Admin/Change';
 import Delete from './components/Admin/Delete';
 
 
-
 function App() {
   const userType = localStorage.getItem('role');
   console.log(userType)

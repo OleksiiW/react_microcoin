@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 
 const Faq = () => {
     const [activeId, setActiveId] = useState(null);
@@ -29,6 +29,7 @@ const Faq = () => {
             color: '#1E90FF'
         })
     };
+    
     
     const questions = [
         {

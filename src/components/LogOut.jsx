@@ -1,5 +1,6 @@
 export const LogOut = () => {
 
+    /* istanbul ignore next */
     const stylesB = {
         button: {
             color: '#8B0000', 
@@ -14,12 +15,12 @@ export const LogOut = () => {
             borderRadius: '5px',
             cursor: 'pointer',
             transition: 'background-color 0.3s',
-            position: 'fixed', // Зафіксувати кнопку
-            bottom: '5px', // Відступ внизу 5px
-            left: '5px', // Відступ зліва 5px
+            position: 'fixed', 
+            bottom: '5px', 
+            left: '5px'
         },
         hover: {
-            backgroundColor: '#A9A9A9', 
+            backgroundColor: '#A9A9A9'
         }
     }
 

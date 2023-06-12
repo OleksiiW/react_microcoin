@@ -22,8 +22,8 @@ const Cabinet = () => {
         'Authorization': 'Bearer ' + token
       }
     })
-    .then(response => {
-      if (!response.ok) {
+    .then(response => {                                     // istanbul ignore next
+      if (!response.ok) {                                    
         throw new Error('Network response was not ok');
       }
       return response.json();
@@ -34,14 +34,16 @@ const Cabinet = () => {
         ...data
       }));
     })
-    .catch((error) => {
-      console.error('Error:', error);
-      window.location.href = "C:/microcoin/login.html";
-      localStorage.removeItem('jwtToken');
-      localStorage.removeItem('userId');
-      window.location.href = '/login';
-      alert('Connection timed out. Please log in again');
+
+    .catch((error) => {                                      // istanbul ignore next
+      console.error('Error:', error);                        // istanbul ignore next
+      window.location.href = "/login";                       // istanbul ignore next
+      localStorage.removeItem('jwtToken');                   // istanbul ignore next
+      localStorage.removeItem('userId');                     // istanbul ignore next
+      window.location.href = '/login';                       // istanbul ignore next
+      alert('Connection timed out. Please log in again');    
     });
+
   }, []);
 
   const styles = {

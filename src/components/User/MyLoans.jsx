@@ -87,10 +87,10 @@ const MyLoans = () => {
 			<div style={style.container}>
             <h1 style={style.h1}>Micro Coin - Your Loan(-s)</h1>
 				{loans.map((loan, index) => (
-					<div key={index} style={style.loanContainer} onClick={() => window.location.href = '/pay'}>
-						<p style={style.loanDetails}><strong>Loan ID:</strong> {loan.loan_id}</p>
-						<p style={style.loanDetails}><strong>Debt:</strong> {loan.debt} <strong>hrn</strong></p>
-						<p style={style.loanDetails}><strong>Date:</strong> {loan.date}</p>
+					<div key={index} data-test="loanContainer" style={style.loanContainer} onClick={() => window.location.href = '/pay'}>
+						<p style={style.loanDetails} data-test="loanDetails"><strong>Loan ID:</strong> {loan.loan_id}</p>
+						<p style={style.loanDetails} data-test="loanDetails"><strong>Debt:</strong> {loan.debt} <strong>hrn</strong></p>
+						<p style={style.loanDetails} data-test="loanDetails"><strong>Date:</strong> {loan.date}</p>
 					</div>
 				))}
 			</div>
