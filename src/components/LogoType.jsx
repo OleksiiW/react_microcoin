@@ -23,7 +23,6 @@ export const LogoType = () => {
             height: '200px',
             overflow: 'hidden',
             width: '100%',
-            padding: '5px',
             backgroundImage: `url(${process.env.PUBLIC_URL + '/sand.jpg'})`, 
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover'

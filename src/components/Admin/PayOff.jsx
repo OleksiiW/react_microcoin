@@ -9,8 +9,7 @@ const styles = {
     },
     container: {
         width: "300px",
-        margin: "0 auto",
-        marginTop: "100px",
+        margin: "225px auto auto 650px",
         border: "1px solid #7289DA",
         padding: "20px",
         borderRadius: "5px",

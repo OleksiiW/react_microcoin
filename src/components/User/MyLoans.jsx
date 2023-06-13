@@ -42,9 +42,9 @@ const MyLoans = () => {
 		const jwtToken = localStorage.getItem('jwtToken');
 		const userId = localStorage.getItem('userId');
 
-		if (jwtToken === null || userId === null) {
-			alert("Session timed out, please log in again");
-			window.location.href = "/login";
+		if (jwtToken === null || userId === null) {                          
+			alert("Session timed out, please log in again");                 
+			window.location.href = "/login";                                 
 			return;
 		}
 
